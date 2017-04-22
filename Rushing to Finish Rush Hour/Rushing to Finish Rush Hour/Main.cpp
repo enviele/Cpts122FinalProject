@@ -2,9 +2,8 @@
 
 int main(void)
 {
-	sf::RenderWindow window(sf::VideoMode(600, 600), "Rush Hour");
-
+	Game newGame;
 	
-
+	newGame.Start();
 
 }

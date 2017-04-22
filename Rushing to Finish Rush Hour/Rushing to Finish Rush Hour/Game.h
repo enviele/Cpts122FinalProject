@@ -1,3 +1,4 @@
+#pragma once
 #include "Shared.h"
 
 
@@ -7,17 +8,21 @@ class Game
 {
 
 public:
+
+
+	Game();
 	void Start();
 
 private:
-	bool Exit();
+	bool isExiting();
 	void GameLoop();
 
 	enum GameState
 	{
-		Uninitialized, LoadingScreen, Paused, Menu, Playing, Exit
+		Uninitialized, LoadingScreen, Paused, Menu, Playing, ExitGame
 	};
 
+	GameState mGameState;
 
 	sf::RenderWindow mWindow;
 
